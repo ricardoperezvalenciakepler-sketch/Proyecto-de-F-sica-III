@@ -42,7 +42,7 @@ int pinG5  = 0;
 int pinG18 = 0;  
 float sensor = 0;
 
-const float NIVEL_MINIMO = 12.5;     // Límites mínimo y máximo del tanque
+const float NIVEL_MINIMO = 0;     // Límites mínimo y máximo del tanque
 const float NIVEL_MAXIMO = 100.0;
 
 WiFiClient ubidots;                  // Comunicación Wifi
@@ -286,7 +286,6 @@ void loop()
     digitalWrite(LED_PIN7, LOW);  
     digitalWrite(LED_PIN8, LOW);  
     digitalWrite(TANQUE_PIN, LOW);
-    digitalWrite(ALMACEN_PIN, HIGH);
 
   }  
 
